@@ -173,7 +173,7 @@ shuffle($langs);
 echo "<pre>";
 print_r($langs);
 echo "</pre>";
-*/
+========================================================================================================================
 //----------------------------------------------------------
 // refill the array 
 //array_fill(index,number,value)
@@ -182,6 +182,25 @@ $array =array_fill(2,10,array("fatma","Mohamed","Amira"));
 $array =array_fill(2,10,array_fill(3,8,"fatma"));
 echo "<pre>";
 print_r($array);
+echo "</pre>";
+*/
+//----------------------------------------------------------
+// array sum  (array)
+//get the all array sum and ignore the strings 
+//----------------------------------------------------------
+$langs = array(
+    "Amira",
+    10,
+    "20",
+    30,
+    10.5,
+);
+echo "<pre>";
+print_r($langs);
+echo "</pre>";
+$arrayFilled = array_sum($langs);
+echo "<pre>";
+print_r($arrayFilled);
 echo "</pre>";
 
  ?>  
