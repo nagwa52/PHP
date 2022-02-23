@@ -173,7 +173,7 @@ shuffle($langs);
 echo "<pre>";
 print_r($langs);
 echo "</pre>";
-========================================================================================================================
+*/
 //----------------------------------------------------------
 // refill the array 
 //array_fill(index,number,value)
@@ -184,85 +184,6 @@ echo "<pre>";
 print_r($array);
 echo "</pre>";
 
-//----------------------------------------------------------
-// array sum  (array)
-//get the all array sum and ignore the strings 
-//----------------------------------------------------------
-$langs = array(
-    "Amira",
-    10,
-    "20",
-    30,
-    10.5,
-);
-echo "<pre>";
-print_r($langs);
-echo "</pre>";
-$arrayFilled = array_sum($langs);
-echo "<pre>";
-print_r($arrayFilled);
-echo "</pre>";
-
-//----------------------------------------------------------
-// array random (array,number) 
-//----------------------------------------------------------
-$array = array("ahmed", "osama","maher","nagwa");
-echo "<pre>";
-print_r($array);
-echo "</pre>";
-$randomArray = array_rand($array,2);
-echo "<pre>";
-echo $array[$randomArray[0]] ."<br>";
-echo $array[$randomArray[1]] ."<br>";
-// echo $array[$randomArray[2]] ."<br>";
-//  echo $array[$randomArray[3]] ."<br>";
-echo "</pre>";
-===========================================================================================================================
-
-//----------------------------------------------------------
-// array Unique (array,type of sorting) 
-//----------------------------------------------------------
-$array = array("ahmed", "osama","maher","nagwa","nagwa","maher");
-echo "<pre>";
-print_r($array);
-echo "</pre>";
-$uniqueArray = array_unique($array);
-echo "<pre>";
-print_r($uniqueArray);
-echo "</pre>";
-
- // ======================================================================================================================== 
-  //--------------------------------------------------------
-// array explode (separator,array) 
-// to convert string  to array
-//----------------------------------------------------------
- $string ="Noha Salma Amira Malak";
-  echo "<pre>";
-echo $string;
-echo "</pre>";
-  //$array = explode(" ",$string);
- // $array = explode(" ",$string,2);
- // $array = explode(" ",$string,-2);
-  $array = explode(" ",$string,0);
-  echo "<pre>";
-  print_r($array);
-  echo "</pre>";
-   //--------------------------------------------------------
-// array implode OR join (separator,array) 
-// to convert from array to string
-//the separator is not core
-//----------------------------------------------------------
-$array =array("amira","salma","ahmed","mohamed","hala");
-echo "<pre>";
-print_r($array);
-echo "</pre>";
-$string = join(",",$array);
-echo "<pre>";
-echo "Our names are : ". $string;
-echo "</pre>";
-*/
-//==========================================================================================================================
-  
-  ?>
-  </body>
+ ?>  
+</body>
 </html>
