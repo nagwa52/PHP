@@ -183,7 +183,7 @@ $array =array_fill(2,10,array_fill(3,8,"fatma"));
 echo "<pre>";
 print_r($array);
 echo "</pre>";
-*/
+
 //----------------------------------------------------------
 // array sum  (array)
 //get the all array sum and ignore the strings 
@@ -203,6 +203,33 @@ echo "<pre>";
 print_r($arrayFilled);
 echo "</pre>";
 
+//----------------------------------------------------------
+// array random (array,number) 
+//----------------------------------------------------------
+$array = array("ahmed", "osama","maher","nagwa");
+echo "<pre>";
+print_r($array);
+echo "</pre>";
+$randomArray = array_rand($array,2);
+echo "<pre>";
+echo $array[$randomArray[0]] ."<br>";
+echo $array[$randomArray[1]] ."<br>";
+// echo $array[$randomArray[2]] ."<br>";
+//  echo $array[$randomArray[3]] ."<br>";
+echo "</pre>";
+===========================================================================================================================
+*/
+//----------------------------------------------------------
+// array Unique (array,type of sorting) 
+//----------------------------------------------------------
+$array = array("ahmed", "osama","maher","nagwa","nagwa","maher");
+echo "<pre>";
+print_r($array);
+echo "</pre>";
+$uniqueArray = array_unique($array);
+echo "<pre>";
+print_r($uniqueArray);
+echo "</pre>";
  ?>  
 </body>
 </html>
