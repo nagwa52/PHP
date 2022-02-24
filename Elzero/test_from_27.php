@@ -247,7 +247,7 @@ echo "</pre>";
   echo "<pre>";
   print_r($array);
   echo "</pre>";
-   //--------------------------------------------------------
+//----------------------------------------------------------
 // array implode OR join (separator,array) 
 // to convert from array to string
 //the separator is not core
@@ -260,9 +260,63 @@ $string = join(",",$array);
 echo "<pre>";
 echo "Our names are : ". $string;
 echo "</pre>";
-*/
+
 //==========================================================================================================================
-  
+  //----------------------------------------------------------
+// array str_split OR join (array,length) 
+// length is optional => it will get array
+//------------------------------------------------------------
+$string ="Hello i love PHP";
+echo $string;
+$array = str_split($string,3);
+echo "<pre>";
+print_r($array);
+echo "</pre>"
+
+  //----------------------------------------------------------
+// array chunk_split OR join (array,length,End) 
+// length is optional & End also => it will get string NOT array
+//------------------------------------------------------------
+$string ="Hello i love PHP";
+echo $string;
+$array = chunk_split($string,3,"-");
+echo "<pre>";
+echo $array;
+echo "</pre>"
+
+//============================================================================================================================
+//--------------------------------------------------------------
+//str_replace OR join (array,length,End) 
+//str_replace(search,replace,String,count)
+//--------------------------------------------------------------
+$string ="I-love=PHP&beacause&PHP%is*easy_and+good=language-PHP";
+echo $string ."<br>";
+//$string2 =str_replace("PHP","javaScript",$string,$i);
+//$string2 =str_replace(array("PHP","easy","good"),"javaScript",$string,$i);
+$string2 =str_replace(array("*","-","+","=","_","%","&")," ",$string);
+echo $string2 ."<br>";
+//echo $i ."<br>";
+
+//============================================================================================================================
+//--------------------------------------------------------------
+// str_shuffle() ,str_repeat() , strlen()
+//--------------------------------------------------------------
+$string ="nagwa is engineera <br>";
+echo $string . "<br>";
+//$string2 = str_shuffle($string);
+//$string2 = str_repeat($string,10);
+$string2 =strlen($string);
+echo $string2 . "<br>";
+*/
+//============================================================================================================================
+//-------------------------------------------------------------------
+// addslashes(string) ,stripslashes(string),strip_tags($string,allow)
+//--------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
+// require() => it makes fatal error and not complete with other code(The better one)
+//include()=> it makes warning but it complete with other code
+//-----------------------------------------------------------------------------------
+
   ?>
   </body>
 </html>
