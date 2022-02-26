@@ -6,14 +6,18 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 if(in_array($username,$array)){
     $_SESSION['username'] = $username;
   
-   echo 'welcome' .$_SESSION['username'];
-   header('REFRESH:5;URL:config.php');
+   echo 'The page will direct to Admin panel';
+   header('REFRESH:5;URL =conf.php');
 }
-echo 'Not Found';
+else{
+    echo 'Not Found';
+}
+
 
 }
 else{
-    echo 'you have not permession to enter this page';
+   // echo 'you have not permession to enter this page';
+   header('REFRESH:2;URL =session.php');
    
 }
 ?>
