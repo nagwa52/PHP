@@ -7,7 +7,7 @@ if(in_array($username,$array)){
     $_SESSION['username'] = $username;
   
    echo 'The page will direct to Admin panel';
-   header('REFRESH:5;URL =conf.php');
+   header('REFRESH:2;URL =conf.php');
 }
 else{
     echo 'Not Found';
