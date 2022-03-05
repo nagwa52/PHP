@@ -6,5 +6,10 @@
     "autoload": {
         "classmap": ["Model","View"],
         "files" : ["config.php"]
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
     }
 }
