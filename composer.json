@@ -4,7 +4,7 @@
     "license": "MIT",
     "require": {"illuminate/database" :"*"},
     "autoload": {
-        "classmap": ["Model","View"],
+        "classmap": ["Model","View","Controller"],
         "files" : ["config.php"]
     },
     "config": {

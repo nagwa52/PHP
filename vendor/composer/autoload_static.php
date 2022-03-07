@@ -156,6 +156,9 @@ class ComposerStaticInit39f85adefa771f11c453ab18157706fd
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
+        'databaseController' => __DIR__ . '/../..' . '/Controller/databaseController.class.php',
+        'signUp' => __DIR__ . '/../..' . '/Controller/signUp.class.php',
+        'signUpController' => __DIR__ . '/../..' . '/Controller/signUpController.class.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
