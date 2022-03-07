@@ -15,6 +15,8 @@ return array(
     'UnhandledMatchError' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
     'ValueError' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
     'databaseController' => $baseDir . '/Controller/databaseController.class.php',
+    'login' => $baseDir . '/Controller/login.class.php',
+    'loginController' => $baseDir . '/Controller/loginController.class.php',
     'signUp' => $baseDir . '/Controller/signUp.class.php',
     'signUpController' => $baseDir . '/Controller/signUpController.class.php',
 );
