@@ -13,6 +13,9 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         $formErrors[] ="* Message can't be greater than 255 character";
     }
    else{
+    $file ="file.txt";
+    $log_file_data =  date("F j Y g:i a")."," .$_SERVER['REMOTE_ADDR'] ."," . $email. ",".$userName ;
+    file_put_contents($file,$log_file_data . "\n", FILE_APPEND);
     $formErrors[] ="Thank you for contacting Us"."<br>"."<br>" ."user name : ". $userName ."<br>" ."Email : ". $email ."<br>". "the Message is : " . $message ;  
    }
 }
