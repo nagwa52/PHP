@@ -1,18 +1,15 @@
-library {
-  background-color: #000000;
-  width: 100%;
+root {
+  padding: 10px;
+  font-size: 14px;
 }
-book {
+employee {
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: white;
   display: block;
-  margin-bottom: 30pt;
-  margin-left: 0pt;
+  margin-bottom: 10px;
 }
-title,
-author {
-  color: #ff0000;
-  font-size: 20pt;
-}
-pubDate {
-  color: #00ff00;
-  font-size: 20pt;
+employee > * {
+  display: block;
 }
